@@ -19,11 +19,9 @@ class CounterClass extends Component<TState, TProps> {
     this.setState({ count: this.state.count + 1 });
   };
   handleDecrease = () => {
-    if (this.state.count === 0) {
-      this.setState({ count: 0 });
-    } else {
-      this.setState({ count: this.state.count - 1 });
-    }
+    this.state.count === 0
+      ? this.setState({ count: 0 })
+      : this.setState({ count: this.state.count - 1 });
   };
 
   render() {

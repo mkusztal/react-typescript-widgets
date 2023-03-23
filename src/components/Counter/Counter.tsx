@@ -8,11 +8,7 @@ const Counter = () => {
   };
 
   const handleDecrease = () => {
-    if (count === 0) {
-      setCount(0);
-    } else {
-      setCount(() => count - 1);
-    }
+    count === 0 ? setCount(0) : setCount(() => count - 1);
   };
   return (
     <div>
