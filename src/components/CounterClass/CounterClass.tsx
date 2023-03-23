@@ -6,6 +6,7 @@ type TProps = {
 };
 
 type TState = {
+  // it works as a property
   count: number;
 };
 
