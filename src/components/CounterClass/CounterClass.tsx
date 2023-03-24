@@ -1,16 +1,12 @@
 import React, { Component } from "react";
 import CounterClassDisplay from "./CounterClassDisplay";
 
-type TProps = {
-  [key: string]: any;
-};
-
 type TState = {
   // it works as a property
   count: number;
 };
 
-class CounterClass extends Component<TState, TProps> {
+class CounterClass extends Component<TState> {
   state: TState = {
     count: 0,
   };

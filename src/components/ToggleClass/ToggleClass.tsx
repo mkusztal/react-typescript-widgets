@@ -1,13 +1,21 @@
 import React, { Component } from "react";
 
+type TProps = {
+  [key: string]: any;
+};
+
 type TState = {
   show: boolean;
 };
 
-class ToggleClass extends Component<TState> {
-  state: TState = {
-    show: false,
-  };
+class ToggleClass extends Component<TProps, TState> {
+  constructor(props: TProps) {
+    super(props);
+
+    this.state = {
+      show: false,
+    };
+  }
 
   handleToggle = () => {
     this.setState({ show: !this.state.show });
