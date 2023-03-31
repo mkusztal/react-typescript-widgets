@@ -7,9 +7,10 @@ const AlignMeFunc = () => {
   //   setAlignment({ alignment: "left" });
   // };
 
+  console.log(alignment);
   return (
     <div>
-      <h1 style={{ textAlign: "right" }}>AlignMeFunc</h1>
+      <h1 style={{ textAlign: "left" }}>AlignMeFunc</h1>
       {/* <button onClick={alignmentLeft}>Left</button>
       <button onClick={alignmentCenter}>Center</button>
       <button onClick={alignmentRight}>Right</button> */}

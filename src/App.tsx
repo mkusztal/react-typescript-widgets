@@ -6,6 +6,9 @@ import ToggleClass from "./components/ToggleClass/ToggleClass";
 import FontSizerFunc from "./components/FontSizerFunc/FontSizerFunc";
 import FontSizeClass from "./components/FontSizeClass/FontSizeClass";
 import AlignMeFunc from "./components/AlignMeFunc/AlignMeFunc";
+import AlignMeClass from "./components/AlignMeClass/AlignMeClass";
+import ClockFunc from "./components/ClockFunc/ClockFunc";
+import ClockClass from "./components/ClockClass/ClockClass";
 
 function App() {
   return (
@@ -26,6 +29,12 @@ function App() {
       <FontSizeClass />
       <hr />
       <AlignMeFunc />
+      <hr />
+      <AlignMeClass />
+      <hr />
+      <ClockFunc />
+      <hr />
+      <ClockClass />
     </div>
   );
 }
