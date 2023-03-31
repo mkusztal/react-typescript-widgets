@@ -5,7 +5,7 @@ const ClockFunc = () => {
 
   useEffect(() => {
     let interval = setInterval(() => setTime(new Date()), 1000);
-    return clearInterval(interval);
+    return () => clearInterval(interval);
   }, []);
   return (
     <div>
