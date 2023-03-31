@@ -5,6 +5,7 @@ import ToggleFun from "./components/ToggleFunc/ToggleFun";
 import ToggleClass from "./components/ToggleClass/ToggleClass";
 import FontSizerFunc from "./components/FontSizerFunc/FontSizerFunc";
 import FontSizeClass from "./components/FontSizeClass/FontSizeClass";
+import AlignMeFunc from "./components/AlignMeFunc/AlignMeFunc";
 
 function App() {
   return (
@@ -23,6 +24,8 @@ function App() {
       <hr />
       {/* with contractor */}
       <FontSizeClass />
+      <hr />
+      <AlignMeFunc />
     </div>
   );
 }
