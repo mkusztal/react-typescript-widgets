@@ -18,7 +18,8 @@ class ClockClass extends Component<TProps, TState> {
   }
 
   componentDidMount(): void {
-    setInterval(() => this.setState({ time: new Date() }), 1000);
+    let interval = setInterval(() => this.setState({ time: new Date() }), 1000);
+    return clearInterval(interval);
   }
 
   render() {
