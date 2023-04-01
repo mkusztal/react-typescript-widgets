@@ -7,6 +7,14 @@ type TProps = {
 type TState = {
   alignment: string;
 };
+type TextAlign =
+  | "center"
+  | "end"
+  | "justify"
+  | "left"
+  | "match-parent"
+  | "right"
+  | "start";
 
 class AlignMeClass extends Component<TProps, TState> {
   constructor(props: TProps) {

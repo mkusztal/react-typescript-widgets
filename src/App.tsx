@@ -11,6 +11,7 @@ import ClockFunc from "./components/ClockFunc/ClockFunc";
 import ClockClass from "./components/ClockClass/ClockClass";
 import ChangeColorFunc from "./components/ChangeColorFunc/ChangeColorFunc";
 import ChangeColorClass from "./components/ChangeColorClass/ChangeColorClass";
+import ColorSliderFunc from "./components/ColorSliderFunc/ColorSliderFunc";
 
 function App() {
   return (
@@ -41,6 +42,8 @@ function App() {
       <ChangeColorFunc />
       <hr />
       <ChangeColorClass />
+      <hr />
+      <ColorSliderFunc />
     </div>
   );
 }
