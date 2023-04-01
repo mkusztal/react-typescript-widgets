@@ -9,6 +9,8 @@ import AlignMeFunc from "./components/AlignMeFunc/AlignMeFunc";
 import AlignMeClass from "./components/AlignMeClass/AlignMeClass";
 import ClockFunc from "./components/ClockFunc/ClockFunc";
 import ClockClass from "./components/ClockClass/ClockClass";
+import ChangeColorFunc from "./components/ChangeColorFunc/ChangeColorFunc";
+import ChangeColorClass from "./components/ChangeColorClass/ChangeColorClass";
 
 function App() {
   return (
@@ -35,6 +37,10 @@ function App() {
       <ClockFunc />
       <hr />
       <ClockClass />
+      <hr />
+      <ChangeColorFunc />
+      <hr />
+      <ChangeColorClass />
     </div>
   );
 }
