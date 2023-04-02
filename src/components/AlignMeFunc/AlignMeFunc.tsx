@@ -1,19 +1,36 @@
 import React, { useState } from "react";
 
-const AlignMeFunc = () => {
-  const [alignment, setAlignment] = useState("left");
+type TextAlign =
+  | "center"
+  | "end"
+  | "justify"
+  | "left"
+  | "match-parent"
+  | "right"
+  | "start";
 
-  // alignmentLeft = () => {
-  //   setAlignment({ alignment: "left" });
-  // };
+const AlignMeFunc = () => {
+  const [alignment, setAlignment] = useState<TextAlign>("left");
+
+  const alignmentLeft = () => {
+    setAlignment("left");
+  };
+
+  const alignmentCenter = () => {
+    setAlignment("center");
+  };
+
+  const alignmentRight = () => {
+    setAlignment("right");
+  };
 
   console.log(alignment);
   return (
     <div>
-      <h1 style={{ textAlign: "left" }}>AlignMeFunc</h1>
-      {/* <button onClick={alignmentLeft}>Left</button>
+      <h1 style={{ textAlign: alignment }}>AlignMeFunc</h1>
+      <button onClick={alignmentLeft}>Left</button>
       <button onClick={alignmentCenter}>Center</button>
-      <button onClick={alignmentRight}>Right</button> */}
+      <button onClick={alignmentRight}>Right</button>
     </div>
   );
 };

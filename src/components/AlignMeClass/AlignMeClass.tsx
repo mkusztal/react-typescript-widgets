@@ -4,9 +4,6 @@ type TProps = {
   [key: string]: any;
 };
 
-type TState = {
-  alignment: string;
-};
 type TextAlign =
   | "center"
   | "end"
@@ -15,6 +12,10 @@ type TextAlign =
   | "match-parent"
   | "right"
   | "start";
+
+type TState = {
+  alignment: TextAlign;
+};
 
 class AlignMeClass extends Component<TProps, TState> {
   constructor(props: TProps) {
@@ -25,13 +26,25 @@ class AlignMeClass extends Component<TProps, TState> {
     };
   }
 
+  alignmentLeft = () => {
+    this.setState({ alignment: "left" });
+  };
+  alignmentCenter = () => {
+    this.setState({ alignment: "center" });
+  };
+  alignmentRight = () => {
+    this.setState({ alignment: "right" });
+  };
+
   render() {
+    const { alignment } = this.state;
+
     return (
       <div>
-        <h1 style={{ textAlign: "center" }}>AlignMeClass</h1>
-        {/* <button onClick={alignmentLeft}>Left</button>
-    <button onClick={alignmentCenter}>Center</button>
-    <button onClick={alignmentRight}>Right</button> */}
+        <h1 style={{ textAlign: alignment }}>AlignMeClass</h1>
+        <button onClick={this.alignmentLeft}>Left</button>
+        <button onClick={this.alignmentCenter}>Center</button>
+        <button onClick={this.alignmentRight}>Right</button>
       </div>
     );
   }
