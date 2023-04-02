@@ -20,21 +20,21 @@ const ColorSliderFunc = () => {
         min="0"
         max="255"
         value={red}
-        // onChange={(event) => setRed(event.target.value)}
+        onChange={(event) => setRed(parseInt(event.target.value))}
       />
       <input
         type="range"
         min="0"
         max="255"
         value={green}
-        // onChange={(event) => setGreen(event.target.value)}
+        onChange={(event) => setGreen(parseInt(event.target.value))}
       />
       <input
         type="range"
         min="0"
         max="255"
         value={blue}
-        // onChange={(event) => setBlue(event.target.value)}
+        onChange={(event) => setBlue(parseInt(event.target.value))}
       />
     </div>
   );
